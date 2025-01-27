@@ -71,6 +71,21 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version> <!-- 保证版本足够新 -->
+                <configuration>
+                    <!-- 使用 release 配置即可 -->
+                    <release>17</release>
+                    <!-- 如果想同时明确 source 和 target，也可以用 -->
+                    <!--
+                    <source>19</source>
+                    <target>19</target>
+                    -->
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 

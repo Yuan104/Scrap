@@ -13,10 +13,7 @@ public class test {
 
     @GetMapping("/start")
     public String startScraper() {
-        msyWebScraperService.scrapeAndStoreData("https://www.msy.com.au/pc-parts/computer-parts/cooling/cpu-cooling-670?page=1&mystock=1-2-3-7-4-5-6&filter_attr=0.0.0.0.115277.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0&sort=shop_price&order=ASC",
-                "cpu coolers",
-                "MSY",
-                "Liquid coolers");
+        msyWebScraperService.scrapeAndStoreData("https://www.centrecom.com.au/cpu-processors?specs=1686", "cpu", "centrecom", "AM5");
         return "Scraping completed!";
     }
 }
